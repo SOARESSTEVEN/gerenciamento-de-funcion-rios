@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div id="mainDiv">
+    <div id="topo">
+        <h1>Administração de Funcionários</h1>
+        <button type="button" id="butao" style="width:auto;">Novo Funcionário</button>
+    </div>
+    <div id="container">
+        <div id="listaFuncionarios">
+            <h2>Funcionários</h2>
+            <div id="employeeList"></div>
+        </div>
+        <div id="detalhesFuncionarios">
+            <h2>Detalhes do Funcionário</h2>
+            <hr>
+            <span id="employeeDetailsSpan"></span>
+        </div>
+    </div>
+</div>
+
+<div id="paiModal">
+    <div id="modal" class="modal">
+        <h1 class="AdicionarForm">Adicionar Novo Funcionário</h1>
+        <button id="cancelbtn" type="button" class="cancelbtn">X</button>
+        <form id="employeeForm" class="modal-content">
+            <input type="text" placeholder="Nome" id="name" name="name" required>
+            <input type="text" placeholder="Sobrenome" id="surname" name="surname" required>
+            <input type="number" id="idade" placeholder="Idade" required>
+            <input type="email" placeholder="E-mail" id="email" name="email" required>
+            <input type="tel" placeholder="Telefone" id="telefone" name="telefone" required>
+            <button type="button" id="submitbtn" class="add">Adicionar</button>
+        </form>
+    </div>
+</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
